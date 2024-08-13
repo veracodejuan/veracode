@@ -38,8 +38,6 @@ veracode_static_scan:
     trigger: true
     commands:
       - "Veracode Static Scan"
-      - "Veracode SCA Scan"
-      - "veracode IAC Scan"
 
 veracode_sca_scan:
   push:
