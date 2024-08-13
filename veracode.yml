@@ -12,6 +12,7 @@ veracode_static_scan:
     action:
       - opened
       - synchronize
+      - edited
     target_branch:
       - default_branch 
   # If the analysis_on_platform is set to true,
@@ -52,6 +53,7 @@ veracode_sca_scan:
     action:
       - opened
       - synchronize
+      - edited
     target_branch:
       - default_branch
   # If the break_build_on_error is set to true, the build will break if the scan failed to complete or with an error, no libraries were found, 
@@ -79,6 +81,7 @@ veracode_iac_secrets_scan:
     action:
       - opened
       - synchronize
+      - edited
     target_branch:
       - default_branch
   # If break_build_policy_findings is set to true, the build will break when findings violate the policy.
