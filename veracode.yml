@@ -39,7 +39,6 @@ veracode_static_scan:
     commands:
       - "Veracode Static Scan"
 
-
 veracode_sca_scan:
   push:
     trigger: true
@@ -59,12 +58,11 @@ veracode_sca_scan:
       - default_branch
   # If the break_build_on_error is set to true, the build will break if the scan failed to complete or with an error, no libraries were found, 
   # or no build system was found and the error_message will be displayed.
-  break_build_on_error: false
-  #will block merge request
+  break_build_on_error: true
   error_message: "Veracode SCA scan faced a problem. Please contact your Veracode administrator for more information."
   # If the trigger is set to true, a scan is triggered when you create an issue containing the commands value or add a comment containing the commands value to an issue.
   # Syntax to be used - COMMANDS_VALUE [branch: BRANCH_NAME]
-  issues: 
+  issues:
     trigger: true
     commands:
       - "Veracode SCA Scan"
